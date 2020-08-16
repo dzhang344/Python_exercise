@@ -10,7 +10,7 @@ pipeline
     {
         choice(name: 'resolution', choices: ['a', 'b'], description: '')
         booleanParam(name: 'debug', defaultValue: true, description: '')
-        choice(name: 'theme', choices: f(params.resolution), description: '')
+        choice(name: 'theme', choices: ['c', 'e'], description: 'theme')
     }
     stages
     {
